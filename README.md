@@ -28,14 +28,13 @@ y = mx + b
 * ( b ) → intercept
 
 ---
-
 ##  Loss Function (Mean Squared Error)
 
 We measure error using MSE:
 
-[
+$$
 \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - (mx_i + b))^2
-]
+$$
 
 ---
 
@@ -43,31 +42,31 @@ We measure error using MSE:
 
 We minimize the loss by computing partial derivatives.
 
-### Partial derivative w.r.t ( m ):
+### Partial derivative w.r.t $m$
 
-[
+$$
 \frac{\partial}{\partial m} = -\frac{2}{n} \sum x_i (y_i - (mx_i + b))
-]
+$$
 
-### Partial derivative w.r.t ( b ):
+### Partial derivative w.r.t $b$
 
-[
+$$
 \frac{\partial}{\partial b} = -\frac{2}{n} \sum (y_i - (mx_i + b))
-]
+$$
 
 ---
 
 ##  Update Rules
 
-[
+$$
 m = m - L \cdot \frac{\partial}{\partial m}
-]
+$$
 
-[
+$$
 b = b - L \cdot \frac{\partial}{\partial b}
-]
+$$
 
-* ( L ) → learning rate
+- $L$ → learning rate
 
 ---
 
